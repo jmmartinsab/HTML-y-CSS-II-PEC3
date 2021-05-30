@@ -1,0 +1,65 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+  @apply ml-8 list-none #{!important};
+}
+
+.link {
+  @apply no-underline font-semibold text-xl text-purple-600  hover:text-purple-900 #{!important};
+}
+
+.f-item {
+  @apply list-none ml-3/100 md:ml-8 #{!important};
+}
+
+.f-link {
+  @apply no-underline font-light text-base md:text-xl text-purple-600 #{!important};
+}
+
+.f-icon {
+  @apply text-3xl ml-3 text-purple-600 hover:text-purple-900 #{!important};
+}
+
+.date-item {
+  @apply font-big-shoulder-st md:text-1.8vw text-4vw mb-8 #{!important};
+}
+
+.card {
+  @apply w-90vw lg:w-38vw shadow-lg mb-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border border border-gray-600 border-opacity-30 rounded #{!important};
+}
+
+.button {
+  @apply bg-transparent hover:bg-purple-900 md:text-1.3vw text-4vw text-purple-900 font-semibold hover:text-white py-2 px-4 border border-purple-900 hover:border-transparent rounded #{!important};
+}
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */

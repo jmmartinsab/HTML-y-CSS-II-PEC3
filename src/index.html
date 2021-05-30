@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+  <!-- fontawesome -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- google-fonts -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="flex flex-wrap items-center justify-between pr-16 pl-16 pt-8 pb-8 shadow-md">
+    <div class="w-16">
+      <a href="index.html">
+        <img src="../src/assets/images/logo-wa.png" alt="wild-arrow-logo">
+      </a>
+    </div>
+
+    <button class="bg-transparent border-none cursor-pointer md:hidden focus:outline-none">
+      <span class="w-6">
+        <span class="fas fa-bars text-3xl text-purple-900"></span>
+      </span>
+    </button>
+
+    <nav class="hidden md:block">
+      <ul class="flex items-center">
+        <li class="item">
+          <a class="link" href="about.html">About us</a>
+        </li>
+
+        <li class="item">
+          <a class="link" href="#">News</a>
+        </li>
+
+        <li class="item">
+          <a class="link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div
+      class="grid grid-cols-8 grid-rows-8 bg-group bg-contain bg-no-repeat md:bg-cover bg-top md:bg-center min-h-1080">
+
+      <div
+        class="md:col-start-2 md:col-end-5 md:row-start-2 md:row-span-1 col-start-1 col-end-4 row-start-1 row-end-2 flex items-center justify-center bg-purple-800 bg-opacity-70">
+        <h2 class="font-trade-winds text-6vw text-white mb-0">WildArrow</h2>
+      </div>
+
+      <div
+        class="md:col-start-5 md:col-end-9 md:row-start-5 md:row-end-6 row-start-7 row-span-1 col-start-1 col-end-6 flex items-center justify-start bg-white">
+        <h3 class="ml-6 font-big-shoulder-st md:text-2.8vw text-6vw text-purple-900">Our new tour is comming</h3>
+      </div>
+
+      <div
+        class="md:row-start-1 md:row-end-5 md:col-start-6 md:col-end-9 row-start-2 row-end-7 col-start-1 col-end-9 flex items-center justify-around bg-purple-500 bg-opacity-80">
+        <ul class="flex flex-col items-start justify-between list-none">
+          <li class="date-item">14JUN <span class="font-bold">Sevilla</span></li>
+          <li class="date-item">25JUN <span class="font-bold">Valencia</span></li>
+          <li class="date-item">30JUN <span class="font-bold">Madrid</span></li>
+          <li class="date-item">4JUL <span class="font-bold">Barcelona</span></li>
+        </ul>
+        <ul class="flex flex-col items-start justify-between list-none">
+          <li class="date-item">14JUL <span class="font-bold">Zaragoza</span></li>
+          <li class="date-item">21JUL <span class="font-bold">Pamplona</span></li>
+          <li class="date-item">28JUL <span class="font-bold">Gijón</span></li>
+          <li class="date-item">5AUG <span class="font-bold">Bilbao</span></li>
+        </ul>
+      </div>
+
+      <div
+        class="md:row-start-7 md:row-span-1 md:col-start-6 md:col-end-9 row-start-8 row-span-1 col-start-3 col-end-7 flex items-center justify-center bg-white bg-opacity-60">
+        <a href="#"><button class="button">More info here</button></a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer
+    class="flex flex-col md:flex-row flex-wrap justify-between items-center md:pl-16 md:pr-16 pl-6 pr-6 pt-8 pb-8 border-t-2">
+    <div class="w-12 mb-5 md:mb-0">
+      <a href="index.html">
+        <img src="../src/assets/images/logo-wa.png" alt="wild-arrow-logo">
+      </a>
+    </div>
+
+    <nav class="footer__menu-container">
+      <ul
+        class="flex flex-col w-screen md:w-auto flex-nowrap md:flex-row items-center mb-5 md:mb-0 pl-6 pr-6 md:pr-0 md:pl-0">
+        <li class="f-item">
+          <a class="f-link" href="index.html">Home</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link" href="about.html">About us</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link" href="#">News</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center">
+      <a class="f-link" href="#"><i class="f-icon fab fa-twitter"></i></a>
+      <a class="f-link" href="#"><i class="f-icon fab fa-facebook-f"></i></a>
+      <a class="f-link" href="#"><i class="f-icon fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
